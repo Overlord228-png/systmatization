@@ -1,4 +1,4 @@
-export default function Contact(params) {
+export default function Contact() {
     return(
         <div className="">
             contact

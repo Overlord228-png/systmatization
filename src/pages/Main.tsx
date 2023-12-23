@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Main() {
     return(
-        <div className=""></div>
+        <div className="">
+            Main
+        </div>
     )
 };
