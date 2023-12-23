@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from "img/LOGO.svg"
+import "style/header.css"
+
 export default function Header() {
     return (
         <div>
@@ -16,7 +18,7 @@ export default function Header() {
                     <li className="">Blog</li>
                     <li className="">Контакты</li>
                 </ul>
-                <button className="">Запросить стоимость</button>
+                <button className="btn_header">Запросить стоимость</button>
             </div>
         </div>
     )
