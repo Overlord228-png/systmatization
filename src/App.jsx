@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from 'components/Layout';
 import Main from 'pages/Main';
 
-const App: React.FC = () => {
+function App() {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
