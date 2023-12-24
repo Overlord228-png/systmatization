@@ -1,13 +1,13 @@
 import React from 'react'
 import Logo from "img/LOGO.svg"
-import "style/header.css"
+import "scss/_header.scss"
 
 export default function Header() {
     return (
         <div>
-            <div className="">
+            <div className="header">
                 <h1>Header</h1>
-                <a className='' href="/src/pages/Main.tsx">
+                <a className='header_logo' href="/src/pages/Main.tsx">
                     <img src={Logo} alt="Logo" />
                 </a>
                 <ul className="">
