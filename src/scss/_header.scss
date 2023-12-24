@@ -1,3 +1,5 @@
+@import "_nullstyle.scss";
+
 .btn_header{
     display: inline-flex;
     padding: 7px 24px;
@@ -7,20 +9,24 @@
     background: #5FBB9F;
 }
 
-.header_logo img{
+.header_logo {
     width: 244px;
     height: 77px;
 }
-// .header{
-//     width: 100%;
-// }
 
-// h1{
-//     font-family: 'OpenSans300';
-//     color: aquamarine;
-// }
+.header{
+    max-width: 1920px;
 
-// .header_logo{
-//     width: 244px;
-//     height: 77px;
-// }
+    .header__wrapper{
+        width: 100%;
+        
+        .header_logo{
+            width: 100%;
+            height: auto;
+            .logo{
+                width: 244px;
+                height: 77px;
+            }
+        }
+    }
+}
