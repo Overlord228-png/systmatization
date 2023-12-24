@@ -1,6 +1,7 @@
 import React from 'react'
 import {Outlet} from 'react-router-dom'
 import Header from './Header'
+import "scss/_layout.scss"
 
 function Layout(){
     return (
