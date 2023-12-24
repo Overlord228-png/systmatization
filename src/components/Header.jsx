@@ -4,11 +4,10 @@ import "scss/_header.scss"
 
 export default function Header() {
     return (
-        <div>
-            <div className="header">
-                <h1>Header</h1>
-                <a className='header_logo' href="/src/pages/Main.tsx">
-                    <img src={Logo} alt="Logo" />
+        <div className='header'>
+            <div className="header__wrapper">
+                <a className='header_logo' href="/src/pages/Main.jsx">
+                    <img src={Logo} alt="Logo" className='logo'/>
                 </a>
                 <ul className="">
                     <li className="">Работы</li>
