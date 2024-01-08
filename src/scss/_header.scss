@@ -1,32 +1,101 @@
 @import "_nullstyle.scss";
 
-.btn_header{
-    display: inline-flex;
-    padding: 7px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 32px;
-    background: #5FBB9F;
-}
+// .btn_header{
+//     display: inline-flex;
+//     padding: 7px 24px;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 32px;
+//     background: #5FBB9F;
+//     width: 10%;
+// }
 
-.header_logo {
-    width: 244px;
-    height: 77px;
-}
-
-.header{
-    max-width: 1920px;
-
-    .header__wrapper{
-        width: 100%;
+// .header{
+//     max-width: 1920px;
+//     .header__wrapper{
+//         display: flex;
+//         width: 100%;
+//         flex-direction: row;
         
-        .header_logo{
-            width: 100%;
+//         .header_logo{
+//             width: 100%;
+//             height: auto;
+//             .logo{
+//                 width: 244px;
+//                 height: 77px;
+//             }
+//         }
+//     }
+// }
+// .header__menu{
+//     display: flex;
+//     flex-direction: row;
+//     .menu__list{
+//         .list__item{
+//             color: #000;
+//             font-family: Euclid Circular A;
+//             font-size: clamp(18px, 2vw, 25px);
+//             font-style: normal;
+//             font-weight: 500;
+//             line-height: 40px;
+//             padding: 0 0 25px 0;
+//         }
+//     }
+// }
+
+.header {
+    color: #fff;
+    padding: 20px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo {
+        text-decoration: none;
+        color: inherit;
+        .logo {
+            width: 100px;
             height: auto;
-            .logo{
-                width: 244px;
-                height: 77px;
+        }
+    }
+
+    .header__menu {
+        .menu__list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        .list__item {
+            color: #000;
+            margin-right: 20px;
+            font-weight: 500;
+            font-style: normal;
+            font-size: clamp(18px, 2vw, 25px);
+            cursor: pointer;
+            
+            &:last-child {
+                margin-right: 0;
             }
         }
     }
 }
+
+    .btn_header {
+        background: #5FBB9F;
+        border-radius: 32px;
+        padding: 7px 24px;
+        border: none;
+        cursor: pointer;
+        font-size: clamp(16px, 2vw, 25px);
+        font-weight: bold;
+        .btn-text{
+            color: #FFF;
+            text-align: center;
+            font-size: clamp(16px, 2vw, 25px);
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+  }
